@@ -1,1 +1,1 @@
-This is from [@johnggli's linktree project](https://github.com/johnggli/linktree)
+This was cloned from [@johnggli's linktree project](https://github.com/johnggli/linktree)

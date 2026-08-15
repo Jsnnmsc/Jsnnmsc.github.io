@@ -1,73 +1,126 @@
-<!DOCTYPE html>
-<html lang="en">
-<!-- Meta description for SEO -->
-<meta name="description" content="Jsnn's Links">
-<meta name="keywords" content="Jason Lu, Jsnn, developer, blog, podcast, portfolio">
-<meta name="author" content="Jason Lu">
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta
+      name="description"
+      content="Jsnn — AI Engineer, writer, and creator. Find my writing, photography, music, and social links."
+    />
+    <meta name="keywords" content="Jason Lu, Jsnn, AI Engineer, blog, photography, podcast, music" />
+    <meta name="author" content="Jason Lu" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jason Lu | Linktree</title>
-  <!-- Favicon -->
-  <link rel="icon" href="Blog logo.png" type="image/x-icon" />
-  <!-- Font Awesome icons -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-  <!-- Core theme CSS -->
-  <link rel="stylesheet" href="style.css">
-</head>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jsnnmsc.github.io/" />
+    <meta property="og:title" content="Jsnn — Links &amp; Projects" />
+    <meta property="og:description" content="AI Engineer, writer, and creator. Come see what I'm making." />
+    <meta property="og:image" content="https://jsnnmsc.github.io/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Jsnn — Links &amp; Projects" />
+    <meta name="twitter:description" content="AI Engineer, writer, and creator. Come see what I'm making." />
+    <meta name="twitter:image" content="https://jsnnmsc.github.io/og.png" />
 
-<body>
-  <a id="profilePicture" href="#popup">
-    <img src="https://avatars.githubusercontent.com/u/87420538?v=4" alt="Profile Picture">
-  </a>
+    <title>Jsnn — Links &amp; Projects</title>
+    <link rel="icon" href="Blog logo.png" type="image/png" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
+    <link rel="stylesheet" href="style.css" />
 
-  <div class="overlay" id="popup">
-    <div class="popup">
-      <div class="popup-photo">
-        <a href="https://avatars.githubusercontent.com/u/87420538?v=4" target="_blank">
-          <img src="https://avatars.githubusercontent.com/u/87420538?v=4" alt="Profile Picture">
+    <script>
+      (() => {
+        const savedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#links">Skip to links</a>
+
+    <button class="theme-toggle reveal" style="--delay: 40ms" type="button" aria-label="Switch to dark mode" data-theme-toggle>
+      <svg class="theme-icon theme-icon--moon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path>
+      </svg>
+      <svg class="theme-icon theme-icon--sun" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="4"></circle>
+        <path d="M12 2v2"></path>
+        <path d="M12 20v2"></path>
+        <path d="m4.93 4.93 1.41 1.41"></path>
+        <path d="m17.66 17.66 1.41 1.41"></path>
+        <path d="M2 12h2"></path>
+        <path d="M20 12h2"></path>
+        <path d="m6.34 17.66-1.41 1.41"></path>
+        <path d="m19.07 4.93-1.41 1.41"></path>
+      </svg>
+    </button>
+
+    <main class="profile-page">
+      <header class="profile-header">
+        <div class="avatar reveal" style="--delay: 80ms">
+          <img src="avatar.jpeg" alt="Jsnn" width="112" height="112" />
+        </div>
+
+        <h1 class="username reveal" style="--delay: 140ms">@Jsnn</h1>
+        <p class="role reveal" style="--delay: 160ms">AI Engineer · Writer · Creator</p>
+        <p class="greeting reveal" style="--delay: 180ms">What's up!</p>
+      </header>
+
+      <nav id="links" class="links" aria-label="Jsnn's links">
+        <div class="link-tiles">
+          <a class="link link--tile reveal" style="--delay: 220ms" href="https://www.jsnnlogs.com/" target="_blank" rel="noopener noreferrer" aria-label="Jsnn's Logs">
+            <span class="link-icon" aria-hidden="true"><img src="Blog logo.png" alt="" /></span>
+            <span class="link-label">Logs</span>
+          </a>
+
+          <a class="link link--tile reveal" style="--delay: 250ms" href="https://gallery.jsnnlogs.com" target="_blank" rel="noopener noreferrer" aria-label="Jsnn's Gallery">
+            <span class="link-icon" aria-hidden="true"><img src="Gallery logo.svg" alt="" /></span>
+            <span class="link-label">Gallery</span>
+          </a>
+
+          <a class="link link--tile reveal" style="--delay: 280ms" href="https://open.spotify.com/show/6PC6JOdq05NxBNIUJz0nBE?si=cbfd5ce1fefa4b1d" target="_blank" rel="noopener noreferrer" aria-label="Jsnn's Logs Podcast">
+            <span class="link-icon" aria-hidden="true"><img class="link-icon__rounded" src="Podcast logo.png" alt="" /></span>
+            <span class="link-label">Podcast</span>
+          </a>
+        </div>
+
+        <a class="link reveal" style="--delay: 320ms" href="mailto:jsnnmsc0421@gmail.com">
+          <span class="link-icon" aria-hidden="true"><i class="fas fa-envelope"></i></span>
+          <span class="link-label">Email</span>
+          <span class="link-arrow" aria-hidden="true">↗</span>
         </a>
-      </div>
-      <a class="popup-close" onclick="history.back()">&times;</a>
-    </div>
-  </div>
 
-  <div id="userName">
-    @Jsnn
-  </div>
+        <a class="link reveal" style="--delay: 350ms" href="https://github.com/Jsnnmsc" target="_blank" rel="noopener noreferrer">
+          <span class="link-icon" aria-hidden="true"><i class="fab fa-github"></i></span>
+          <span class="link-label">GitHub</span>
+          <span class="link-arrow" aria-hidden="true">↗</span>
+        </a>
 
-  <div id="links">
-    <a class="link" href="mailto:jsnnmsc0421@gmail.com" target="_blank">
-      <i class="fas fa-envelope">&nbsp;</i>Email
-    </a>
-    <a class="link" href="https://github.com/Jsnnmsc" target="_blank">
-      <i class="fab fa-github">&nbsp;</i>Github
-    </a>
-    <a class="link" href="https://www.linkedin.com/in/po-hsun-lu/" target="_blank">
-      <i class="fab fa-linkedin">&nbsp;</i>Linkedin
-    </a>
-    <a class="link" href="https://www.jsnnlogs.com/" target="_blank">
-      <img src="Blog logo.png" alt="Jsnn's Logs" style="height: 20px; vertical-align: middle;">&nbsp;Jsnn's Logs
-    </a>
-    <a class="link" href="https://gallery.jsnnlogs.com" target="_blank">
-      <img src="Gallery logo.svg" alt="Jsnn's Gallery" style="height: 20px; vertical-align: middle;">&nbsp;Jsnn's Gallery
-    </a>
-    <a class="link" href="https://open.spotify.com/show/6PC6JOdq05NxBNIUJz0nBE?si=cbfd5ce1fefa4b1d" target="_blank">
-      <img src="Podcast logo.png" alt="Jsnn's Logs Podcast"
-        style="height: 20px; vertical-align: middle; border-radius: 4px;">&nbsp;Jsnn's Logs Podcast
-    </a>
-    <a class="link" href="https://on.soundcloud.com/S15JAb8P4PPSkVmFen" target="_blank">
-      <i class="fab fa-soundcloud">&nbsp;</i>SoundCloud
-    </a>
-    <a class="link" href="https://open.spotify.com/artist/3pf1uPqcPs9QVx8oL1crbI?si=jxy9AwVZTsOKog3gA6HJ9g" target="_blank">
-      <i class="fab fa-spotify">&nbsp;</i>Spotify
-    </a>
-  </div>
+        <a class="link reveal" style="--delay: 380ms" href="https://www.linkedin.com/in/po-hsun-lu/" target="_blank" rel="noopener noreferrer">
+          <span class="link-icon" aria-hidden="true"><i class="fab fa-linkedin-in"></i></span>
+          <span class="link-label">LinkedIn</span>
+          <span class="link-arrow" aria-hidden="true">↗</span>
+        </a>
 
-  <div id="hashtag">
-    What's up!
-  </div>
-</body>
+        <a class="link reveal" style="--delay: 410ms" href="https://on.soundcloud.com/S15JAb8P4PPSkVmFen" target="_blank" rel="noopener noreferrer">
+          <span class="link-icon" aria-hidden="true"><i class="fab fa-soundcloud"></i></span>
+          <span class="link-label">SoundCloud</span>
+          <span class="link-arrow" aria-hidden="true">↗</span>
+        </a>
 
+        <a class="link reveal" style="--delay: 440ms" href="https://open.spotify.com/artist/3pf1uPqcPs9QVx8oL1crbI?si=jxy9AwVZTsOKog3gA6HJ9g" target="_blank" rel="noopener noreferrer">
+          <span class="link-icon" aria-hidden="true"><i class="fab fa-spotify"></i></span>
+          <span class="link-label">Spotify</span>
+          <span class="link-arrow" aria-hidden="true">↗</span>
+        </a>
+      </nav>
+
+    </main>
+
+    <script src="script.js"></script>
+  </body>
 </html>
